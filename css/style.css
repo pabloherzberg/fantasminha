@@ -16,7 +16,7 @@ body{
 #conteudo{
   float:left;
   width:50%;
-  height:90%;
+  height:auto;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
