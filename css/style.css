@@ -1,0 +1,315 @@
+*{
+    border:0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    font-family: monospace;
+    color: antiquewhite;
+    font-variant:small-caps;
+    font-size:4vw;
+}
+body{
+  background:linear-gradient(black,gray);
+  height: 100vh;
+  width: 100vw;
+}
+#conteudo{
+  float:left;
+  width:50%;
+  height:90%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+#conteudo h1{
+  text-align: right;
+  margin-top:10%;
+}
+#conteudo nav{
+  margin-left:10%;
+  padding-left:10%;
+  max-width:100%;
+}
+#conteudo ol{
+  perspective:100vw;
+}
+#conteudo ol li{
+  border-top-left-radius:10%;
+  border-top-right-radius:10%;
+  border-bottom-left-radius:10%;
+  border-bottom-right-radius:10%;
+  background:linear-gradient(#040B0b, #111B1B);
+  transform:rotateY(-30deg) rotateX(15deg);
+  transition:0.8s ease-in-out;
+  padding:10px;
+}
+#conteudo ol li:hover{
+  transform:rotateY(0deg) rotateX(0deg);
+  z-index:10;
+  background:linear-gradient(#040003, #23171E);
+}
+#conteudo p{
+  font-size:3vw;
+  display:none;
+}
+#inputabrir1{
+  display:none;
+}
+#inputabrir1:checked ~ label p{
+ display:block;
+}
+#inputabrir1:checked ~ label .abrefecha{
+  transform:rotate(-45deg);
+}
+#inputabrir2{
+  display:none;
+}
+#inputabrir2:checked ~ label p{
+ display:block;
+}
+#inputabrir2:checked ~ label .abrefecha{
+  transform:rotate(-45deg);
+}
+#inputabrir3{
+  display:none;
+}
+#inputabrir3:checked ~ label p{
+ display:block;
+}
+#inputabrir3:checked ~ label .abrefecha{
+  transform:rotate(-45deg);
+}
+.abrefecha{
+  display:inline-block;
+  font-size:4vw;
+  float:right;
+  transition:.3s ease-in-out;
+}
+#botoes{
+  clear:both;
+  display:flex;
+  justify-content:space-around;
+}
+#botoes a{
+  text-decoration: none;
+  background-color: #111B1B;
+  font-size:3vw;
+}
+#footer{
+  width:100%;
+  height:10%;
+  background-color:black;
+  float:right;
+  text-align:center;
+  font-size:2vw;
+}
+#desenho{
+    float:right;
+    width:50%;
+    height:90%;
+}
+#corpo{
+    position: relative;
+    background-color: antiquewhite;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    animation: tremer 0s infinite;
+    margin-left:20%;
+    margin-top:50%
+}
+#sobrancelhae{
+    position: absolute;
+    background-color: none;
+    width: 20%;
+    height: 8%;
+    margin-top: 22%;
+    margin-left:18%;
+    border-bottom:6px solid black;
+    border-radius:50%;
+}
+#sobrancelhad{
+    position: absolute;
+    background-color: none;
+    width: 20%;
+    height: 8%;
+    margin-top: 22%;
+    margin-left:48%;
+    border-bottom:6px solid black;
+    border-radius:50%;
+}
+#olhoe{
+    position: absolute;
+    background-color: black;
+    width: 6%;
+    margin-top: 30%;
+    margin-left:25%;
+    border-radius:50%;
+    animation: piscar 2s infinite;
+}
+#olhod{
+    position: absolute;
+    background-color: black;
+    width: 6%;
+    margin-top: 30%;
+    margin-left:55%;
+    border-radius:50%;
+    animation: piscar 2s infinite;
+}
+#bracoe{
+    position: absolute;   
+    background-color: antiquewhite;
+    width: 40%;
+    height: 20%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+    margin-left:-25%;
+    margin-top:40%;
+    transform:rotate(20deg);
+    box-shadow: -4px 1px;
+}
+#bracod{
+    position: absolute;   
+    background-color: antiquewhite;
+    width: 40%;
+    height: 20%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius:50%;
+    margin-top:40%;
+    margin-left:90%;
+    transform: rotate(-20deg);
+    box-shadow: 4px 1px;
+}
+
+.dentinho{
+  display:inline-flex;
+  border-top: 1.75vw solid white;
+  border-left: 0.50vw solid transparent;
+  border-right:0.50vw solid transparent;
+  max-width:0%;
+  max-height:0%;
+}
+.dentinho-menor{
+  border-top: 0.75vw solid white;
+  border-left: .5vw solid transparent;
+  border-right:.5vw solid transparent;
+  max-width:0%;
+  max-height:0%;
+}
+#dentes{
+  position:relative;
+  display:flex;
+  justify-content: flex-start;
+  width:100%;
+  height:100%;
+}
+#boca{
+    position: absolute;
+    background-color: red;
+    width: 30%;
+    margin-top: 60%;
+    margin-left:30%;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+    animation: fecharboca 5s infinite;
+}
+#lingua{
+    position: absolute;   
+    background-color: pink;
+    width: 50%;
+    height: 80%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius:50%;
+    border-top-left-radius:30%;
+    border-top-right-radius:30%;
+    margin-top:-50%;
+    margin-left:5%;
+    transform: rotate(20deg);
+    z-index:1;
+    animation: desaparecer 5s infinite;
+}
+#fissura-lingua{
+  height: 60%;
+  width: 3%;
+  margin-left: 45%;
+  margin-top: 40%;
+  background-color: black;
+}
+#boca-fundo{
+    position:absolute;
+    width:100%;
+    height:60%;
+    border-top-left-radius:30%;
+    border-top-right-radius:10%;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+    margin-top:-60%;
+    background-color:black;
+    animation: desaparecer 5s infinite;
+}
+@keyframes piscar{
+  0%{
+    height:1%;
+  }
+  20%{
+    height:10%;
+  }
+  100%{
+    height:10%;
+  }
+}
+@keyframes fecharboca{
+  0%{
+    height: 0%;
+  }
+  50%{
+    height: 35%;
+  }
+  75%{
+    height: 35%;
+  }
+  100%{
+    height: 0%;
+  }
+}
+@keyframes desaparecer{
+  0%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 0;
+  }
+  21%{
+    opacity: 1;
+  }
+  79%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes tremer{
+  from{
+    margin-left:20%;
+  }
+  to{
+    margin-left:21.5%;
+  }
+}
+@keyFrames animaBraco{
+  from{
+    transform: rotate(20deg);
+  }
+  to{
+    transform: rotate(-10deg);
+  }
+}
+table td{
+  padding-left: 10px;
+  font-size: 2vh;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fantasma</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="conteudo">
+  <h1>Guia rapidíssimo de desenho</h1>
+  <nav>
+   
+  <ol>
+     <li>
+       <input id="inputabrir1" type="checkbox"></input>
+        <label for="inputabrir1">Formas<div class="abrefecha">+</div>
+          <p>Este desenho é inteiramente feito através de DIVs coloridas e deformadas. Este desenho é relativamente simples. Bastou brincar com as bordas, tamanhos de divs e cores</p>
+          <p>Para criar elipses bastou indicar as bordas de cada canto, o quanto deveriam se dobrar. Por exemplo(border-left-top-radius:50%). E por fim rotacionar quantos graus eu desejava</p>
+        </label>
+    </li>
+    <li>
+       <input id="inputabrir2" type="checkbox"></input>
+        <label for="inputabrir2">Experimente<div class="abrefecha">+</div>
+          <p>Para o corpo, Defini que a altura e largura seriam de 20vw, assim eu obtive um quadrado e pude então arredondar os cantos e obter um circulo</p>
+          <p>Podemos indicar uma porcentagem menor pra dobra dos cantos e ainda aumentar a altura do personagem e ainda rotacionar para obter a elipse que eu quiser</p>
+</label>
+    </li>
+<li>
+       <input id="inputabrir3" type="checkbox"></input>
+        <label for="inputabrir3" onclick="AlteraForma()">Alterar formato<div class="abrefecha">+</div>
+          <p>Agora o corpo tem as seguintes dimensões: Height:40vw e border-radius:0%</p>
+          <p>Como percebido, ele ficou todo fu.. ...distorcido, porquê ele foi pensado para funcionar num tamanho relativo a largura da tela. Me deu tanto trabalho pra fazer ele, por favor clica nele pra voltar ao normal</p>
+        </label>
+    </li>
+  </ol>
+  </nav>
+<div id="botoes">
+  <a href="index.html">Voltar</a>
+  <a href="page3.html">Avançar</a>
+  <a href="index.html">Inicio</a>
+</div>
+
+</div>
+
+    <div id="desenho">  
+         <div id="corpo" onclick="Normal()" onmouseover="EseEsconde(), DseEsconde()" onmouseout="revela()">
+              <div id="bracod"></div>
+              <div id="bracoe"></div>
+              <div id="sobrancelhae"></div>
+              <div id="sobrancelhad"></div>
+              <div id="olhoe"></div>
+              <div id="olhod"></div>
+              <div id="boca">
+                  <div id="dentes">
+                    <div class="dentinho"></div>
+                    <div class="dentinho-menor"></div>
+                    <div class="dentinho-menor"></div>
+                    <div class="dentinho-menor"></div>
+                    <div class="dentinho-menor"></div>
+                    <div class="dentinho"></div>               
+                  </div>
+                  <div id="boca-fundo"></div>
+                  <div id="lingua">
+                    <div id="fissura-lingua"></div> 
+                  </div>
+              </div>
+          </div>        
+    </div>
+<div id="footer">Pablo S. Herzberg</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

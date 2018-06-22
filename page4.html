@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fantasma</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="conteudo">
+  <h1>Guia rapidíssimo de desenho</h1>
+  <nav>
+   
+  <ol>
+     <li>
+       <input id="inputabrir1" type="checkbox"></input>
+        <label for="inputabrir1">Animacão<div class="abrefecha">+</div>
+         <p>Criar uma animação é tão simples quanto alterar uma propriedade CSS com um ::hover</p>
+         <p>Para tanto basta invocar uma propriedade chamada ANIMATION e então definir um nome, o tempo da animação e o número de repetições</p>
+        </label>
+    </li>
+    <li>
+       <input id="inputabrir2" type="checkbox"></input>
+        <label for="inputabrir2">Experimente<div class="abrefecha">+</div>
+        <p>vamo animar os braços do desenho com esta propriedade, para isso iremos usar o ANIMATION: balancarBraco(nome que eu dei) 0.5s(meio segundo) infinite(numero de repetições)</p>
+        <p>Então criaremos um seletor @keyFrames animaBraco{from{transform: rotate(20deg);} to{transform:rotate(-10deg);}}</p>
+           
+        </label>
+    </li>
+<li>
+       <input id="inputabrir3" type="checkbox"></input>
+        <label for="inputabrir3" onclick="animaBraco()">Animar braco esquerdo<div class="abrefecha">+</div>
+         <p>Com esse tchauzinho bem mau-feito termina por aqui o guia rapidíssimo de desenho e animação.</p>
+        </label>
+    </li>
+  </ol>
+  </nav>
+<div id="botoes">
+  <a href="page3.html">Voltar</a>
+  <a href="contato.html">Avançar</a>
+  <a href="index.html">Inicio</a>
+</div>
+
+</div>
+
+    <div id="desenho">  
+         <div id="corpo" onclick="Normal()" onmouseover="EseEsconde(), DseEsconde()" onmouseout="revela()">
+              <div id="bracod"></div>
+              <div id="bracoe"></div>
+              <div id="sobrancelhae"></div>
+              <div id="sobrancelhad"></div>
+              <div id="olhoe"></div>
+              <div id="olhod"></div>
+              <div id="boca">
+                  <div id="dentes">
+                    <div class="dentinho"></div>
+                    <div class="dentinho-menor"></div>
+                    <div class="dentinho-menor"></div>
+                    <div class="dentinho-menor"></div>
+                    <div class="dentinho-menor"></div>
+                    <div class="dentinho"></div>               
+                  </div>
+                  <div id="boca-fundo"></div>
+                  <div id="lingua">
+                    <div id="fissura-lingua"></div> 
+                  </div>
+              </div>
+          </div>        
+    </div>
+<div id="footer">Pablo S. Herzberg</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fantasma</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="conteudo">
+  <h1>Guia rapidíssimo de desenho</h1>
+  <nav>
+   
+  <ol>
+     <li>
+       <input id="inputabrir1" type="checkbox"></input>
+        <label for="inputabrir1">Unidades Relativas<div class="abrefecha">+</div>
+          <p>Para construir objetos com tamanhos responsivos podemos utilizar a % no caso deste objeto estar contido dentro de uma div de tamanho fixo definido</p>
+          <p>Mas outra forma de fazer isso é utilizar o ViewPort. Essa unidade infere diretamente no tamanho do objeto sem relacionar com o elemento pai. Tornando-o assim, mais responsiso.</p>
+        </label>
+    </li>
+    <li>
+       <input id="inputabrir2" type="checkbox"></input>
+        <label for="inputabrir2">Experimente<div class="abrefecha">+</div>
+          <p>O fantasma ao lado foi setado com width e height de 30vw cada. O Viewport Widht calcula automaticamente a largura da tela. (100vw é o máximo)</p>
+          <p>Logo o fantasma ao lado tem tamanho igual a 30% da largura da tela. Poderia usar o ViewPort Height, que calcularia a altura da tela.</p>
+</label>
+    </li>
+<li>
+       <input id="inputabrir3" type="checkbox"></input>
+        <label for="inputabrir3" onclick="AlteraTamanho()">Alterar de VW para VH<div class="abrefecha">+</div>
+          <p>Quando você clicou nesse botão, apenas alterei a unidade do tamnho do fantasma de ViewPort Widht(largura da tela) para Viewport Height(altura da tela)</p>
+          <p>Como percebido, ele ficou todo fu.. ...distorcido, porquê ele foi pensado para funcionar num tamanho relativo a largura da tela. Me deu tanto trabalho pra fazer ele, por favor clica nele pra voltar ao normal</p>
+        </label>
+    </li>
+  </ol>
+  </nav>
+<div id="botoes">
+  <a href="">Voltar</a>
+  <a href="page2.html">Avançar</a>
+  <a href="">Inicio</a>
+</div>
+
+</div>
+
+    <div id="desenho">  
+         <div id="corpo" onclick="Normal()" onmouseover="EseEsconde(), DseEsconde()" onmouseout="revela()">
+              <div id="bracod"></div>
+              <div id="bracoe"></div>
+              <div id="sobrancelhae"></div>
+              <div id="sobrancelhad"></div>
+              <div id="olhoe"></div>
+              <div id="olhod"></div>
+              <div id="boca">
+                  <div id="dentes">
+                    <div class="dentinho"></div>
+                    <div class="dentinho-menor"></div>
+                    <div class="dentinho-menor"></div>
+                    <div class="dentinho-menor"></div>
+                    <div class="dentinho-menor"></div>
+                    <div class="dentinho"></div>               
+                  </div>
+                  <div id="boca-fundo"></div>
+                  <div id="lingua">
+                    <div id="fissura-lingua"></div> 
+                  </div>
+              </div>
+          </div>        
+    </div>
+<div id="footer">Pablo S. Herzberg</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
